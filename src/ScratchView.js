@@ -81,7 +81,7 @@ class ScratchView extends Component {
             return (
                 <AnimatedScratchView
                     {...this.props}
-                    style={[styles.container, { opacity: this.state.animatedValue,borderRadius:20 }]}
+                    style={[this.props.style,styles.container, { opacity: this.state.animatedValue},]}
                     onImageLoadFinished={this._onImageLoadFinished}
                     onTouchStateChanged={this._onTouchStateChanged}
                     onScratchProgressChanged={this._onScratchProgressChanged}
